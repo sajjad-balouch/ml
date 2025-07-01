@@ -7,7 +7,7 @@
 =            Banner            =
 =============================-->
 
-<section class="banner bg-banner-one overlay">
+<section class="banner bg-banner-one">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -15,10 +15,10 @@
 				<div class="block">
 					<!-- Coundown Timer -->
 					<!-- <div class="timer"></div> -->
-					<h1>Smart Investments</h1>
-					<h2>Secure Future</h2>
+					<!-- <h1>Smart Investments</h1> -->
+					<!-- <h2>Secure Future</h2> -->
 					<!-- Action Button -->
-					<a href="{{route('register')}}" class="btn btn-white-md">SignUp Now</a>
+					
 				</div>
 			</div>
 		</div>
@@ -31,12 +31,19 @@
 =            About            =
 ============================-->
 
-<section class="section about" id="about">
+<section class="section about" id="about" style="padding-top:10px;">
+	<center>
+		<a href="{{route('register')}}" class="btn btn-warning">SignUp</a>
+		<a href="{{route('enter')}}" class="btn btn-success">LogIn</a> <br><br>
+	</center>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-6 align-self-center">
-				<div class="image-block bg-about">
-					<img class="img-fluid" src="{{asset('public/front/images/speakers/featured-speaker.jpg')}}" alt="">
+				<div class="image-block bg-about" style="padding:0px; text-align: left;">
+					<!-- <img class="img-fluid" src="{{asset('public/front/images/speakers/man.jpg')}}" alt=""> -->
+					<video controls style="width: 290px;">
+						<source src="{{asset('public/vdad.mp4')}}" type="video/mp4">
+					</video>
 				</div>
 			</div>
 			<div class="col-lg-8 col-md-6 align-self-center">
@@ -196,8 +203,14 @@
 			<div class="col-md-8">
 				<!-- Get ticket info -->
 				<div class="content-block">
-					<h2>We are registered from <span class="alternate">SECP</span></h2>
-					<a href="" class="btn btn-main-md">View Registration</a>
+					<h2>We are registered from <span class="alternate">SECP & FBR</span></h2>
+					<a href="{{asset('public/front/secp.pdf')}}" download="{{asset('public/front/secp.pdf')}}" class="btn btn-main-md">View SECP</a>
+					<a href="{{asset('public/front/fbr.pdf')}}" download="{{asset('public/front/fbr.pdf')}}" class="btn" style="padding: 15px 40px;
+  border-radius: 0;
+  background: #ee0c0c;
+  color: #fff;
+  outline: none;
+  font-size: 0.9375rem;">View FBR</a>
 				</div>
 			</div>
 		</div>
@@ -228,25 +241,12 @@
 					<ul class="list-inline sponsors-list">
 						<li class="list-inline-item">
 							<div class="image-block text-center">
-								<a href="#">
+								<a href="https://urfcvm-uc.myshopify.com/">
 									<img src="{{asset('public/front/images/sponsors/pt-spon-two.png')}}" alt="sponsors-logo" class="img-fluid">
 								</a>
 							</div>
 						</li>
-						<li class="list-inline-item">
-							<div class="image-block text-center">
-								<a href="#">
-									<img src="{{asset('public/front/images/sponsors/pt-spon-two.png')}}" alt="sponsors-logo" class="img-fluid">
-								</a>
-							</div>
-						</li>
-						<li class="list-inline-item">
-							<div class="image-block text-center">
-								<a href="#">
-									<img src="{{asset('public/front/images/sponsors/pt-spon-three.png')}}" alt="sponsors-logo" class="img-fluid">
-								</a>
-							</div>
-						</li>
+						
 					</ul>
 				</div>
 				<!-- Title -->
@@ -269,12 +269,12 @@
 				<!-- Subscribe Content -->
 				<div class="content">
 					<h3>Our legal <span class="alternate">Advisor</span></h3>
-					<p>Mrs. Ahmed Nadeem <br> LLB Honrs.</p>
+					<p>Mr. Danish Sangheera <br> Legal Advisor<br>Allied Funds Pvt Ltd.</p>
 				</div>
 			</div>
 			<div class="col-md-6 ml-auto align-self-center">
 				<!-- Subscription form -->
-				<img src="{{asset('public/front/images/speakers/speaker-ticket.png')}}">
+				<img src="{{asset('public/front/images/speakers/speaker-1.jpg')}}">
 			</div>
 		</div>
 	</div>

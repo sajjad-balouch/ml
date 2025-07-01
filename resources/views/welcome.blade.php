@@ -36,7 +36,7 @@ input.form-control:focus {
     </style>
     <div class="row" style="text-align: center; padding: 0px; margin:0px;">
         <div class="col-md-12" style="margin-top:20px">
-            <h3 style="font-family:arial; color:white; text-shadow: 2px 2px 2px black;">A Project of Global Traders</h3>
+            <h3 style="font-family:arial; color:#5e17eb; ">A Project of Global Traders</h3>
         </div>
     </div>
     <div class="wrapper bg-white rounded-4 shadow-lg p-4 mx-auto" style="max-width: 420px; margin-top: 5rem; margin-bottom: 5rem;">

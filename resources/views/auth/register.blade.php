@@ -70,10 +70,10 @@
             <div class="input-group shadow-inner">
                 <span class="input-group-text bg-purple text-white border-0"><i class="fa fa-lock"></i></span>
                 <input type="password" placeholder="Enter your Password" maxlength="6" required class="form-control" name="password">
-                <button type="button" class="btn bg-white text-muted"><i class="fa fa-eye-slash"></i></button>
+                <!-- <button type="button" class="btn bg-white text-muted"><i class="fa fa-eye-slash"></i></button> -->
             </div>
         </div>
-
+        @isset(request()->id)
         <div class="form-group mb-4">
             <label class="form-label">Referral Code(Optional)</label>
             <div class="input-group shadow-inner">
@@ -81,7 +81,7 @@
                 <input type="text" placeholder="Referral Code" class="form-control" name="refcode" value="{{ request()->id }}">
             </div>
         </div>
-
+        @endisset
         <button type="submit" class="btn btn-purple w-100 shadow">Register</button>
 
         <div class="text-center pt-3 text-muted">

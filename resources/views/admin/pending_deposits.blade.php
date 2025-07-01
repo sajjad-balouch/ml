@@ -40,7 +40,7 @@
                           @foreach($rows as $key => $row)
                             <tr>
                               <td>{{$key+1}}</td>
-                              <td>{{$row->user_id}}</td>
+                              <td><a href="{{route('user-detail',$row->user_id)}}">{{$row->user_id}}</a></td>
                               <td>{{$row->debit}}</td>
                               <td>{{$row->method}}</td>
                               <td><label class="badge badge-gradient-danger">Pending</label></td>
