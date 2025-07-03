@@ -31,7 +31,7 @@ class RegisterController extends Controller
     public function redirectTo()
     {
         if(auth()->user()->role == 0)
-            return url('/user');
+            return '/user';
         else
             return url('/admin');
     }
