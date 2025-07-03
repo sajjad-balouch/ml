@@ -12,6 +12,16 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Models\User;
 use App\Models\Plan;
 
+
+Route::get('/clear-cache', function () {
+    Artisan::call('config:clear');
+    Artisan::call('cache:clear');
+    Artisan::call('route:clear');
+    Artisan::call('view:clear'); // optional
+
+    return 'All caches (config, route, cache, view) have been cleared!';
+});
+
 Route::get('/', function () {
     $plans = Plan::all();
     return view('index', compact('plans'));

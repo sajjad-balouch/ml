@@ -16,10 +16,10 @@ class Normal
     public function handle(Request $request, Closure $next): Response
     {
         $user = auth()->user();
-        if (!$user) {
-            // Redirect to login if not logged in
-            return redirect('/');
-        }
+        // if (!$user) {
+        //     // Redirect to login if not logged in
+        //     return redirect('/');
+        // }
 
         if ($user->role == 1) {
             // Redirect or abort if role is not admin
