@@ -34,7 +34,11 @@
 <section class="section about" id="about" style="padding-top:10px;">
 	<center>
 		<a href="{{route('register')}}" class="btn btn-warning">SignUp</a>
+		@if(auth()->user())
+		<a href="{{route('user')}}" class="btn btn-success">Dashboard</a> <br><br>
+		@else
 		<a href="{{route('enter')}}" class="btn btn-success">LogIn</a> <br><br>
+		@endif
 	</center>
 	<div class="container">
 		<div class="row">
